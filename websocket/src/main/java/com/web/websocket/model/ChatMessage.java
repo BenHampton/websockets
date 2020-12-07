@@ -1,11 +1,16 @@
 package com.web.websocket.model;
 
-import lombok.Data;
 
-import java.awt.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
-public class Message {
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
+public class ChatMessage {
 
     public enum MessageType {
         CHAT,
